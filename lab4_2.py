@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 print('Введіть градуси Фаренгейта')
-f = input()
+temperature_Fahrenheit = input()
 
-c = (int(f) - 32) / 1.8
+temperature_Celsius = (int(temperature_Farengate) - 32) / 1.8
 
-print('{0} градусів Фаренгейта відповідає: {1} градусам Цельсія'.format(f, c))
+print('{0} градусів Фаренгейта відповідає: {1} градусам Цельсія'.format(temperature_Fahrenheit, temperature_Celsius))
