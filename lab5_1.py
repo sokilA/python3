@@ -1,9 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 
-x = int(input())
+num = int(input())
 
-answer = int(x & (x - 1))
+answer = int(num & (num - 1))
 if answer == 0:
 	print('True')
 else:
