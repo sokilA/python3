@@ -8,8 +8,8 @@ def input_number() -> int:
 
 def input_roman_number() -> str:
 	"""input roman number"""
-	number = input('Enter your rome number: ')
-	return number
+	roman_number = input('Enter your rome number: ')
+	return roman_number
 
 def from_num_to_rom(number:int) -> str:
 	#function replace simple numbers into roman numbers
