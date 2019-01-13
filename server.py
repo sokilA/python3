@@ -16,8 +16,10 @@ serversocket.bind((host, port))
 serversocket.listen(5)
 print('the server is waiting for connection')
 
-clientsocket, addr = serversocket.accept()      
-print('Got a connection from {}'.format(addr)) 
+clientsocket = None
+while not clientsocket:
+    clientsocket, addr = serversocket.accept()
+    print('Got a connection from {}'.format(addr))
 
 clientsocket.send('What is your name?'.encode('utf-8'))
 client_answer = clientsocket.recv(1024)
@@ -38,7 +40,6 @@ while True:
 		clientsocket.send('incorrect question\n'.encode('utf-8'))
 
 clientsocket.close()
-serversocket.close()
 
 
 
