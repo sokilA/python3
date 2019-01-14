@@ -22,4 +22,4 @@ with open('result.csv', 'w') as file:
         file.write(td[5].text.replace(',', '.'))
         file.write(',')
         file.write(td[6].text)
-file.write('\n')
+        file.write('\n')
